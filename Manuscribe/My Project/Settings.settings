@@ -1,0 +1,60 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="PrintBorder" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PrintPageNoLoc" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="PrintPageNoFormat" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#PNO#</Value>
+    </Setting>
+    <Setting Name="PrintBorderColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="PrintFillRectangle" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PrintFillRectangleColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Blue</Value>
+    </Setting>
+    <Setting Name="PrintLeftImage" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PrintRightImage" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PrintalternateNumberonChapter1" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="PrintPageNumbers" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="PrintTitleLoc" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="AuthorLoc" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="PrintMetaFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Arial, 7.8pt</Value>
+    </Setting>
+    <Setting Name="ShowMargin" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ScrollBar" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="StyleSet" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SeamlessEdititng" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ReleaseVideo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://www.youtube.com/watch?v=FDZYPa_Ve0s</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

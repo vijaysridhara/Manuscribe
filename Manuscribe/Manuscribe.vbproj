@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.3.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3783F1DC-63E5-487A-A24A-4F8323CFC863}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>VitalLogic.Applications.My.MyApplication</StartupObject>
+    <RootNamespace>VitalLogic.Applications</RootNamespace>
+    <AssemblyName>Manuscribe</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Manuscribe.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Manuscribe.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>appicon2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ColorPalette">
+      <HintPath>G:\WD Sync\!My Projects\Projects\Graphicart\ColorPalette\ColorPalette\bin\Release\ColorPalette.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="i00BindingList, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\i00SpellChecker\i00SpellCheck\bin\Debug\i00BindingList.exe</HintPath>
+    </Reference>
+    <Reference Include="i00SpellCheck, Version=1.0.0.23096, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\i00SpellChecker\i00SpellCheck\bin\Debug\i00SpellCheck.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Cover.vb" />
+    <Compile Include="Classes\Idea.vb" />
+    <Compile Include="Classes\RecentBook.vb" />
+    <Compile Include="Classes\RecentBooks.vb" />
+    <Compile Include="Classes\TaskEntry.vb" />
+    <Compile Include="Classes\Style.vb" />
+    <Compile Include="Classes\StyleSet.vb" />
+    <Compile Include="Controls\BookCalenar.Designer.vb">
+      <DependentUpon>BookCalenar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BookCalenar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BookDetailsCtl.Designer.vb">
+      <DependentUpon>BookDetailsCtl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BookDetailsCtl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CoverCanvas.Designer.vb">
+      <DependentUpon>CoverCanvas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CoverCanvas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\IdeaContainer.Designer.vb">
+      <DependentUpon>IdeaContainer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IdeaContainer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\IdeaCtl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\RecentBookCtl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ResearchContainer.Designer.vb">
+      <DependentUpon>ResearchContainer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ResearchContainer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ResearchElementsDesk.Designer.vb">
+      <DependentUpon>ResearchElementsDesk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ResearchElementsDesk.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WebCtrl.Designer.vb">
+      <DependentUpon>WebCtrl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WebCtrl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AdvRichTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\BookDetails.Designer.vb">
+      <DependentUpon>BookDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BookDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Canvas.Designer.vb">
+      <DependentUpon>Canvas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Canvas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\Chapter.vb" />
+    <Compile Include="Classes\comFun.vb" />
+    <Compile Include="Controls\Desk.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\Book.vb" />
+    <Compile Include="Forms\ChapterList.Designer.vb">
+      <DependentUpon>ChapterList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChapterList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CoverImages.Designer.vb">
+      <DependentUpon>CoverImages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CoverImages.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Findform.Designer.vb">
+      <DependentUpon>Findform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Findform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ImageResizer.Designer.vb">
+      <DependentUpon>ImageResizer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ImageResizer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IndexContents.Designer.vb">
+      <DependentUpon>IndexContents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IndexContents.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MaainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MaainForm.Designer.vb">
+      <DependentUpon>MaainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewDraft.Designer.vb">
+      <DependentUpon>NewDraft.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewDraft.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewChapter.Designer.vb">
+      <DependentUpon>NewChapter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewChapter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\Page.vb" />
+    <Compile Include="Classes\RObject.vb" />
+    <Compile Include="Forms\Pagedef.Designer.vb">
+      <DependentUpon>Pagedef.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Pagedef.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PageList.Designer.vb">
+      <DependentUpon>PageList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PageList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PrintSettings.Designer.vb">
+      <DependentUpon>PrintSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PrintSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectBook.Designer.vb">
+      <DependentUpon>SelectBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SelectBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StylesDef.Designer.vb">
+      <DependentUpon>StylesDef.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StylesDef.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Indexes.Designer.vb">
+      <DependentUpon>Indexes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Indexes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\VideoPlayer.Designer.vb">
+      <DependentUpon>VideoPlayer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VideoPlayer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Controls\myRTB.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\PageTemplate.vb" />
+    <Compile Include="Controls\SynopControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\AdvRichTextBox.resx">
+      <DependentUpon>AdvRichTextBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BookCalenar.resx">
+      <DependentUpon>BookCalenar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BookDetailsCtl.resx">
+      <DependentUpon>BookDetailsCtl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CoverCanvas.resx">
+      <DependentUpon>CoverCanvas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\IdeaContainer.resx">
+      <DependentUpon>IdeaContainer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\myRTB.resx">
+      <DependentUpon>myRTB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ResearchContainer.resx">
+      <DependentUpon>ResearchContainer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ResearchElementsDesk.resx">
+      <DependentUpon>ResearchElementsDesk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WebCtrl.resx">
+      <DependentUpon>WebCtrl.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BookDetails.resx">
+      <DependentUpon>BookDetails.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Canvas.resx">
+      <DependentUpon>Canvas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChapterList.resx">
+      <DependentUpon>ChapterList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CoverImages.resx">
+      <DependentUpon>CoverImages.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Findform.resx">
+      <DependentUpon>Findform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ImageResizer.resx">
+      <DependentUpon>ImageResizer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IndexContents.resx">
+      <DependentUpon>IndexContents.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MaainForm.resx">
+      <DependentUpon>MaainForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewDraft.resx">
+      <DependentUpon>NewDraft.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewChapter.resx">
+      <DependentUpon>NewChapter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Pagedef.resx">
+      <DependentUpon>Pagedef.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PageList.resx">
+      <DependentUpon>PageList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PrintSettings.resx">
+      <DependentUpon>PrintSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectBook.resx">
+      <DependentUpon>SelectBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StylesDef.resx">
+      <DependentUpon>StylesDef.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Indexes.resx">
+      <DependentUpon>Indexes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\VideoPlayer.resx">
+      <DependentUpon>VideoPlayer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Resources\Welcome to Manuscribe.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\butterfly.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="License.txt" />
+    <Content Include="Resources\TutorialVideos.txt" />
+    <None Include="Resources\book_64.png" />
+    <None Include="Resources\page.png" />
+    <None Include="Resources\editnote.png" />
+    <Content Include="appicon.ico" />
+    <None Include="Resources\ideasfolder_big.png" />
+    <None Include="Resources\butterfly.png" />
+    <None Include="Resources\images_big.png" />
+    <None Include="Resources\documents_big.png" />
+    <None Include="Resources\pev6i5rh.bmp" />
+    <None Include="Resources\1ae9wm64.bmp" />
+    <None Include="Resources\doctype.png" />
+    <None Include="Resources\imagetype.png" />
+    <None Include="Resources\addbook.png" />
+    <None Include="Resources\openbook.png" />
+    <None Include="Resources\preview.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\page-shuffle.png" />
+    <None Include="Resources\chapterlist.png" />
+    <None Include="Resources\pagedesign.png" />
+    <None Include="Resources\bookprops.png" />
+    <None Include="Resources\bookcover.png" />
+    <Content Include="appicon2.ico" />
+    <Content Include="Resources\PrinterDet.txt" />
+    <None Include="Resources\textfiles_big.png" />
+    <None Include="Resources\robjectdocument.png" />
+    <None Include="Resources\robjecttext.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\word.png" />
+    <None Include="Resources\search_24.png" />
+    <Content Include="TemplateSQL.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.3.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.3.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.3.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.3.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
