@@ -452,7 +452,6 @@
     <None Include="Resources\save.png" />
     <None Include="Resources\word.png" />
     <None Include="Resources\search_24.png" />
-    <Content Include="TemplateSQL.txt" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
