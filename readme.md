@@ -18,5 +18,6 @@ The solution requires Additional components for the build to be successful. The 
 
 ## Binaries
 If you are looking for binaries, here is the link. 
+Signed!
 [Download Manuscribe 0.5 for Windows](https://app.box.com/s/cawzvk985wavdpg09ubohvzqjp197rje)
 
