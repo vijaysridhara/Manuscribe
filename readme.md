@@ -1,4 +1,4 @@
-<iframe src="https://app.box.com/embed/s/khnvqdkwg6jd8e0fjjt0ytwzzo3163xq?sortColumn=date&view=list" width="800" height="550" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+![Author's assistant](https://drive.google.com/file/d/1upbS_x9400CDksT4uUkI9u27Rt-TZ2rW/view?usp=sharing)
 ## Introduction
 Manuscribe - Authors Assistant Version 0.5.0 is developed by Vijay Sridhara and released under Apache 2.0 OS license
 You are free to use this software for any purpose, so long as it doesn't violate any local or international laws. 
