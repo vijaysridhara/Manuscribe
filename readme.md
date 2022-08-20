@@ -13,8 +13,8 @@ For any queries contact vitallogic@gmail.com
 
 ##Important
 The solution requires Additional components for the build to be successful. The i00SpellCheck.exe and ColorPalette.dll (The former is a Opensource component released on Code project and the latter is my own component, and will include source in the upcoming releases) The spell Checker needs dictionaries which are ported along with it. I packed the additional components into zip and kept for your download.
-# [Download additional components here](https://app.box.com/s/bxeo8it33optd84uj8wuzc7pm3ezo8zh)
+### [Download additional components here](https://app.box.com/s/bxeo8it33optd84uj8wuzc7pm3ezo8zh)
 
-##Binaries
+## Binaries
 If you are looking for binaries, here is the link. 
 
