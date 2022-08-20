@@ -12,7 +12,7 @@ For any queries [-v-i-t-a-l-l-o-g-i-c-@-g-m-a-i-l-(-d-o-t-)-c-o-m-]
 2. 4 GB of RAM
 3. .NET Framework 4.8/Visual Studio 2019, 2022
 
-##Important
+## Important
 The solution requires Additional components for the build to be successful. The i00SpellCheck.exe and ColorPalette.dll (The former is a Opensource component released on Code project and the latter is my own component, and will include source in the upcoming releases) The spell Checker needs dictionaries which are ported along with it. I packed the additional components into zip and kept for your download.
 ### [Download additional components here](https://app.box.com/s/bxeo8it33optd84uj8wuzc7pm3ezo8zh)
 
